@@ -1,3 +1,5 @@
+package Java;
+
 
 public class ArraysCC {
   public static void printPairs(int numbers[]){
