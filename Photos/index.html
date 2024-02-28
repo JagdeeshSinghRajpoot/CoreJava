@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        #photo-container {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 80vh; /* Adjust the maximum height as needed */
+        }
+
+        #prev-btn, #next-btn {
+            margin-top: 10px;
+            cursor: pointer;
+            padding: 5px 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Photo Gallery</h1>
+    <div id="photo-container">
+        <img id="current-photo" src="/images/photo.jpg" alt="Photo 1">
+        <br>
+        <button id="prev-btn" onclick="window.location.href='/prev'">Previous</button>
+        <button id="next-btn" onclick="window.location.href='/next'">Next</button>
+    </div>
+</body>
+</html>
