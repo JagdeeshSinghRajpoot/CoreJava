@@ -1,4 +1,4 @@
-package Java;
+
 public class MeargSort {
 
   public static void meargSort(int[] arr , int si, int ei){

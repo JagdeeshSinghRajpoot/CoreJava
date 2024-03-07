@@ -1,5 +1,3 @@
-package Java;
-
 public class ArrayMaxSumUsingPrefixArray {
   // prifix[end] - prefix[start-1]
   public static void arrayMaxSum(int[] numbers){
