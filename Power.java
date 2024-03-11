@@ -1,4 +1,3 @@
-import org.xml.sax.ext.Attributes2;
 
 public class Power{
   public static void Numbers(int n){
@@ -31,16 +30,32 @@ public class Power{
     return HalfPower;
   }
 
+  public static int Power3(int a, int n){
+    if(n==0){
+      return 1;
+    }
+
+    int HalfPower = Power3(a, n/2);
+    int HalfPowerSq = HalfPower * HalfPower;
+
+    if (n%2 != 0) {
+      HalfPowerSq *= a; 
+    }
+    return HalfPowerSq;
+  }
+
   public static void test(){
       int[][] A2D = new int[5][10];
       System.out.println(A2D[3].length);
+      Math
   }
 
 
   public static void main(String[] args) {
     // Numbers(10);
-    // System.out.println(Power1(2,8));
+    System.out.println(Power1(2,5));
     // System.out.println(Power2(2,8));
-    test();
+    System.out.println(Power3(2, 5));
+    // test();
   }
 }
